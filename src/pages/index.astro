@@ -5,39 +5,21 @@ import TypingAnimation from "../components/TypingComputer";
 ---
 
 <Layout title="Farith Te Invita :)">
-  <!-- <ul role="list" class="link-card-grid">
-    <Card
-      href="https://docs.astro.build/"
-      title="Documentation"
-      body="Learn how Astro works and explore the official API docs."
+  <main class="flex flex-col justify-around items-center">
+    <TypingAnimation
+      client:load
+      text="¡Hola Guardián! El comado estelar te necesita para una misión muy especial..."
+      duration={100}
+      loop={true}
     />
-  </ul> -->
-  <TypingAnimation
-    client:load
-    text="¡Hola Guardián! El comado estelar te necesita para una misión muy especial..."
-    duration={100}
-    loop={true}
-  />
+    <button class="text-white bg-purple-500 rounded-xl w-max px-4 py-2">
+      <a href="/home"> 🚀¡VAMOS!</a>
+    </button>
+  </main>
 </Layout>
 
 <style>
-  html {
-    height: 100%;
-  }
-  :root {
-    background-image: linear-gradient(
-      180deg,
-      #5c3f64 0,
-      #4a2f5e 25%,
-      #321f59 50%,
-      #0a1254 75%,
-      #000550 100%
-    );
-  }
-  /* @import "./components/typing-computer.css"; */
   main {
-    margin: auto;
-    padding: 1.5rem;
-    max-width: 60ch;
+    height: 100vh;
   }
 </style>
