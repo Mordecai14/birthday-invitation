@@ -1,14 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import TypingAnimation from "../components/TypingComputer";
+
 ---
 
 <Layout title="Farith Te Invita :)">
   <main class="flex flex-col justify-around items-center lg:px-48">
     <TypingAnimation
-      client:load
+      client:visible
       text="¡Hola Guardián! El comado estelar te necesita para una misión muy especial..."
-      duration={150}
+      duration={200}
       loop={false}
     />
     <button class="text-white bg-purple-500 rounded-xl w-max px-4 py-2">
