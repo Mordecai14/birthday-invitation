@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import "./index.css"
+import React, { useEffect, useState } from "react";
+import "./index.css";
 
 const TypingAnimation = ({ text, duration, loop }) => {
-  const [typedText, setTypedText] = useState('');
+  const [typedText, setTypedText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -22,7 +22,7 @@ const TypingAnimation = ({ text, duration, loop }) => {
         if (loop) {
           setIsDeleting(true);
         }
-      } else if (isDeleting && newText === '') {
+      } else if (isDeleting && newText === "") {
         setIsDeleting(false);
         setCurrentIndex(currentIndex + 1);
       }
@@ -32,7 +32,7 @@ const TypingAnimation = ({ text, duration, loop }) => {
   }, [typedText, isDeleting, currentIndex, text, duration, loop]);
 
   return (
-    <h1 className="text-green-500 text-5xl font-bold">
+    <h1 className="text-green-500 text-5xl font-bold text-center w-screen h-[350px]">
       {typedText}
       <span className="animate-blink">|</span>
     </h1>
