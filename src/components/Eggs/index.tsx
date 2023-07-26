@@ -20,7 +20,14 @@ const Eggs = () => {
   };
 
   return (
-    <section className="flex flex-col w-full gap-8">
+    <section className="flex flex-col w-full gap-8 h-screen relative">
+      {counter > 9 && (
+        <img
+          alt="dino"
+          src={Cartel}
+          className={`${styles["animated-image"]} absolute left-0 top-[15%]`}
+        />
+      )}
       <h1 className="text-3xl lg:text-4xl text-center text-green-900 ">
         Haz Tap en el huevo para desubrir la sorpresa 🎁
       </h1>
@@ -29,7 +36,7 @@ const Eggs = () => {
         className="w-full h-[35rem] flex justify-center items-center"
       >
         <img
-          src={counter < 5 ? Egg1 : counter > 9 ? Cartel : Egg2}
+          src={counter < 5 ? Egg1 : counter > 9 ? Egg3 : Egg2}
           className={`object-cover ${isVibrating ? styles.vibratingImage : ""}`}
           onClick={handleImageClick}
         />
@@ -37,10 +44,12 @@ const Eggs = () => {
       <a
         href="/home"
         className={`${
-          counter > 0 ? "flex" : "hidden"
-        }  w-auto bg-green-400 h-auto items-center justify-center rounded-lg text-blue-500 p-3`}
+          counter > 0 ? "opacity-1" : "opacity-0"
+        }  w-auto bg-green-400 h-auto items-center justify-center rounded-lg text-blue-500 p-3 transition-all`}
       >
-        <button className="text-2xl lg:text-3xl">¡VAMOS...🦕!</button>
+        <button className="text-2xl lg:text-3xl flex justify-center items-center w-full">
+          ¡VAMOS...🦕!
+        </button>
       </a>
     </section>
   );
