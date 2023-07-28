@@ -13,7 +13,7 @@ const Eggs = () => {
 
   const handleImageClick = () => {
     setCounter(counter + 1);
-    if (counter < 9) {
+    if (counter < 8) {
       setIsVibrating(true);
       setTimeout(() => {
         setIsVibrating(false);
@@ -44,11 +44,11 @@ const Eggs = () => {
           </div>
         </div>
       )} */}
-      <h1 className="text-3xl md:text-5xl lg:text-3xl text-center text-green-900 ">
-        Haz Tap en el huevo para desubrir la sorpresa 🎁
+      <h1 className="text-3xl md:text-5xl lg:text-3xl text-center text-lime-700 ">
+        Haz Tap en el huevo para descubrir la sorpresa 🎁
       </h1>
       <img
-        src={counter < 5 ? Egg1 : counter > 9 ? Cartel : Egg2}
+        src={counter < 3 ? Egg1 : counter > 7 ? Cartel : Egg2}
         className={`object-cover ${
           isVibrating ? styles.vibratingImage : ""
         } lg:w-[60%]`}
@@ -60,7 +60,7 @@ const Eggs = () => {
         className={`${counter > 9 ? "opacity-1" : "opacity-0"} ${
           counter > 9 ? "scale-100" : "scale-0"
         } hover:scale-125
-           bg-green-400 h-auto rounded-lg text-blue-500 p-3 transition duration-700 ease-in-out text-2xl md:text-4xl flex justify-center items-center w-full md:w-1/2`}
+           bg-green-400 h-auto rounded-lg text-blue-500 p-3 transition duration-700 ease-in-out text-3xl md:text-4xl flex justify-center items-center w-full md:w-[70%]`}
       >
         ¡VAMOS...🦕!
       </a>
