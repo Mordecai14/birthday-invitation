@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="huevo1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1052.32 1066.49">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ece9da;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-3 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-4 {
+        fill: #c7e5b3;
+      }
+
+      .cls-5 {
+        fill: #d6d1bc;
+      }
+    </style>
+    <clipPath id="clippath">
+      <path class="cls-2" d="m854.69,540.33c74.77,270.66-147.29,451.61-328.98,451.61s-400.76-161.5-328.98-451.61c59.9-242.11,149.24-451.61,330.94-451.61s260.62,211.19,327.03,451.61Z"/>
+    </clipPath>
+  </defs>
+  <path class="cls-5" d="m866.06,540.33c77.36,280.03-152.39,467.23-340.37,467.23s-414.63-167.09-340.37-467.23c61.98-250.49,154.41-467.23,342.39-467.23s269.64,218.5,338.35,467.23Z"/>
+  <g class="cls-3">
+    <path class="cls-1" d="m854.69,540.33c74.77,270.66-147.29,451.61-328.98,451.61s-400.76-161.5-328.98-451.61c59.9-242.11,149.24-451.61,330.94-451.61s260.62,211.19,327.03,451.61Z"/>
+    <ellipse class="cls-4" cx="457.14" cy="440.95" rx="171.19" ry="130.46" transform="translate(-117.25 712.02) rotate(-69.23)"/>
+    <circle class="cls-4" cx="646.72" cy="229.35" r="44.43"/>
+    <circle class="cls-4" cx="372.5" cy="243.14" r="30.64"/>
+    <circle class="cls-4" cx="254.55" cy="560.24" r="39.83"/>
+    <circle class="cls-4" cx="587.74" cy="781.61" r="46.72"/>
+    <circle class="cls-4" cx="841.27" cy="721.1" r="110.3"/>
+    <circle class="cls-4" cx="281.78" cy="868.35" r="107.43"/>
+  </g>
+</svg>

@@ -17,7 +17,7 @@
   }
   
   .vibratingImage {
-    animation: vibrate 1s ease-in-out;
+    animation: vibrate 0.5s ease-in-out;
   }
 
   @keyframes slideUpAndFadeIn {
@@ -27,10 +27,10 @@
     }
     100% {
       opacity: 1;
-      top: 15%;
+      top: 27%;
     }
   }
   
   .animated-image {
-    animation: slideUpAndFadeIn 1s ease-in-out;
+    animation: slideUpAndFadeIn 0.3s ease-in-out;
   }
