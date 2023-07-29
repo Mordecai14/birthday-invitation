@@ -1,23 +1,34 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import MainInfo from "../components/MainInfo.astro";
-import CountdownTimer from "../components/CountdownTimer/index";
+import Attendance from "../components/Attendance.astro";
+import CountdownTimer from "../components/countdownTimer/CountdownTimer";
+import PartyPopper from "../assets/icons/party-popper.png";
 
 const targetDate = "2023-09-09T13:59:59";
 ---
 
 <Layout>
   <main class="flex flex-col items-center lg:px-[30rem] text-center">
-    <section>
+    <section class="h-screen flex flex-col justify-center relative gap-12">
+      <img
+        alt="gorro de fiesta"
+        src={PartyPopper}
+        class="absolute w-[60px] bottom-[100px] left-[50px] animate-infinite animate-bounce"
+      />
+      <img
+        alt="gorro de fiesta"
+        src={PartyPopper}
+        class="absolute w-[60px] top-[75px] right-[50px] animate-bounce animate-infinite animate-delay-500"
+      />
       <h1 class="text-4xl">¡HOLA! <br /> Es un gusto tenerte aquí.</h1>
       <p class="mt-5 text-xl font-mono">
-        Farith está cumpliendo 3 años y nos encantaría que nos acompañaras 🥳
-        <br />
-        ¡Será una fiesta muy
-        <br />Dino-divertida!
+        Farith está cumpliendo 3 años y nos encantaría que nos acompañaras 🥳<br
+        />¡Será una fiesta muy<br />Dino-divertida!
       </p>
     </section>
     <CountdownTimer client:load targetDate={targetDate} />
     <MainInfo />
+    <Attendance />
   </main>
 </Layout>
