@@ -36,3 +36,21 @@
   }
 
   
+  @keyframes scaleAnimation {
+    0%, 100% {
+      transform: scale(1,1.5);
+      /* transform: rotate(0deg); */
+
+    }
+    50% {
+      transform: scale(1.5,1);
+      /* transform: rotate(-39deg); */
+
+
+    }
+  }
+  
+  .animatedText {
+    animation: scaleAnimation 2s infinite;
+  }
+   

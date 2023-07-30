@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_10" data-name="Capa 10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1101.56 1543.57">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 5.62px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-1, .cls-4, .cls-6 {
+        fill: #f28080;
+      }
+
+      .cls-1, .cls-4, .cls-6, .cls-7 {
+        stroke: #bf6565;
+      }
+
+      .cls-8 {
+        fill: #bf6565;
+      }
+
+      .cls-2 {
+        fill: #c0f2dd;
+        stroke: #b1ddb1;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke-width: 5.95px;
+      }
+
+      .cls-3 {
+        stroke: #b7e2d3;
+      }
+
+      .cls-3, .cls-5, .cls-9, .cls-10, .cls-11 {
+        fill: none;
+      }
+
+      .cls-12 {
+        fill: #9accef;
+      }
+
+      .cls-6 {
+        stroke-width: 5.95px;
+      }
+
+      .cls-6, .cls-11, .cls-7 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-5 {
+        stroke: #d8eae3;
+        stroke-width: 3px;
+      }
+
+      .cls-10 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-11 {
+        stroke: #9accef;
+        stroke-width: 13px;
+      }
+
+      .cls-7 {
+        fill: #f2ecd3;
+        stroke-width: 6px;
+      }
+    </style>
+    <clipPath id="clippath">
+      <path class="cls-9" d="m124.86,217.48s65.96,5.11,131.91-13.02c0,0-44.34-95.49-69.62-98.81s-62.3,111.83-62.3,111.83Z"/>
+    </clipPath>
+  </defs>
+  <path class="cls-4" d="m270.74,295.1s-1.03-35.96,19.06-17.14,70.47,210.16,4.43,301.74l-37.45-85.11s21.11-82.38,13.96-199.49Z"/>
+  <path class="cls-4" d="m338.45,460.66c-10.25,13.76-29.99,37.56-53.01,51.61,52.11,106.65,1.98,123.59,1.98,123.59-69.45,21.79-132.43,5.45-132.43,5.45-68.92-9.19-47.46-81.31-26.22-127.25l-1.43.95s-48.86-28.88-37.83-77.6c2.3-10.13,10.07-18.32,20.19-20.64,8.79-2.01,19.65.21,28.95,16.2,8.09,13.91,11.39,27.87,12.48,39.43,24.15-46.83,21.56-181.39,21.56-181.39l61.28-3.74c-.34,127.32,27.57,181.83,27.57,181.83.49.8.97,1.59,1.46,2.38,7.86-16.21,27.08-50.15,50.63-51.45,9.04-.49,15.55,1.85,20.25,5.42,10.96,8.32,12.8,24.17,4.57,35.21Z"/>
+  <g>
+    <ellipse class="cls-6" cx="196.32" cy="237.96" rx="68.97" ry="67.36"/>
+    <ellipse class="cls-8" cx="159.84" cy="241.06" rx="4.85" ry="8.43"/>
+    <ellipse class="cls-8" cx="231.5" cy="239.36" rx="4.85" ry="8.43"/>
+    <ellipse class="cls-8" cx="204.96" cy="277.96" rx="2.79" ry="4.54" transform="translate(-93.55 104.29) rotate(-23.41)"/>
+    <ellipse class="cls-8" cx="188.24" cy="279.75" rx="4.54" ry="2.79" transform="translate(-143.27 341.37) rotate(-66.59)"/>
+  </g>
+  <circle class="cls-7" cx="101.48" cy="583.46" r="11.36"/>
+  <circle class="cls-7" cx="125.25" cy="571.1" r="11.36"/>
+  <circle class="cls-7" cx="151.29" cy="575.19" r="11.36"/>
+  <ellipse class="cls-1" cx="135.19" cy="610.52" rx="36.38" ry="41.14" transform="translate(-315.95 177.52) rotate(-33.69)"/>
+  <circle class="cls-7" cx="320.08" cy="583.46" r="11.36"/>
+  <circle class="cls-7" cx="296.31" cy="571.1" r="11.36"/>
+  <circle class="cls-7" cx="270.27" cy="575.19" r="11.36"/>
+  <path class="cls-5" d="m134.66,212.94s-1.22,83.63,50.43,92.06c.01,0,.02,0,.04,0,7.61,1.27,15.39,1.09,22.92-.6,9.3-2.09,21.42-5.59,27.98-10.66,20.29-15.68,41.52-27.57,8.32-92.09"/>
+  <ellipse class="cls-1" cx="286.37" cy="610.52" rx="41.14" ry="36.38" transform="translate(-380.46 510.14) rotate(-56.31)"/>
+  <g class="cls-10">
+    <path class="cls-2" d="m124.86,217.48s65.96,5.11,131.91-13.02c0,0-44.34-95.49-69.62-98.81s-62.3,111.83-62.3,111.83Z"/>
+    <path class="cls-11" d="m152.95,132.46c.8.1,31.66.77,67.15-4.6"/>
+    <path class="cls-11" d="m148.1,152.12c.8.1,46.73,1.78,82.21-3.58"/>
+    <path class="cls-11" d="m120.52,170c1.56,3.28,99.49,5.25,133.79-5.11"/>
+    <path class="cls-11" d="m122.31,192.37c1.56,3.28,99.49,5.25,133.79-5.11"/>
+    <path class="cls-11" d="m122.31,211.15c1.56,3.28,99.49,5.25,133.79-5.11"/>
+    <path class="cls-11" d="m112.17,109.24c1.56,3.28,99.49,5.25,133.79-5.11"/>
+  </g>
+  <path class="cls-3" d="m124.86,217.48s65.96,5.11,131.91-13.02c0,0-44.34-95.49-69.62-98.81s-62.3,111.83-62.3,111.83Z"/>
+  <ellipse class="cls-12" cx="175.49" cy="84.34" rx="14.35" ry="23.56" transform="translate(1.18 171.1) rotate(-52.13)"/>
+  <ellipse class="cls-12" cx="202.75" cy="106.58" rx="14.35" ry="23.56" transform="translate(-5.85 201.2) rotate(-52.13)"/>
+  <ellipse class="cls-12" cx="200.53" cy="85.45" rx="23.56" ry="14.35" transform="translate(-10.22 141.09) rotate(-37.87)"/>
+  <ellipse class="cls-12" cx="168.83" cy="106.58" rx="23.56" ry="14.35" transform="translate(-29.87 126.09) rotate(-37.87)"/>
+</svg>
