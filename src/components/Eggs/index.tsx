@@ -51,7 +51,7 @@ const Eggs = () => {
     <section className="flex flex-col w-full h-screen relative justify-start items-center">
       {counter >= 9 && <Confetti width={wWidth} height={wHeight} />}
       <p
-        className={`absolute top-[60%] left-[30%] md:top-[23%] md:left-[8%] lg:top-[33%] lg:left-[11%] text-center text-lime-600 text-cl lg:text-2xl ${
+        className={`absolute top-[63%] left-[30%] md:top-[23%] md:left-[8%] lg:top-[33%] lg:left-[11%] text-center text-vermillion text-cl lg:text-2xl ${
           styles.animatedText
         } opacity-0 ${counter >= 9 && "opacity-100"} transition-all`}
       >
@@ -59,15 +59,16 @@ const Eggs = () => {
         <br />A la súper Dino-Fiesta
       </p>
 
-      <h1 className="text-3xl md:text-5xl lg:text-6xl lg:mt-10 text-center text-lime-700 ">
-        Haz Tap en el huevo para descubrir la sorpresa 🎁
+      <h1 className="text-3xl md:text-5xl lg:text-6xl text-center">
+        Haz Tap en el huevo para descubrir la sorpresa 🎁 <br />
+        <label className="text-xs">*Dile a tu pequeño que lo haga 🤫</label>
       </h1>
       <img
         src={returnImages()}
         // src={Cartel}
         className={`object-cover ${isVibrating && styles.vibratingImage} ${
           counter < 9 && "sm:h-[40%]"
-        } ${counter >= 9 && "sm:h-[65%]"} mt-5 lg:mt-10`}
+        } ${counter >= 9 && "sm:h-[65%]"} lg:h-[60%] mt-5 lg:mt-10`}
         onClick={handleImageClick}
       />
       <a
@@ -75,7 +76,7 @@ const Eggs = () => {
         className={`${counter > 8 ? "opacity-1" : "opacity-0"} ${
           counter > 7 ? "scale-100" : "scale-0"
         } hover:scale-125
-           bg-green-400 h-auto rounded-lg text-blue-500 p-3 transition duration-700 ease-in-out text-3xl md:text-4xl flex justify-center items-center w-full md:w-[70%]`}
+           bg-sunshine h-auto rounded-lg  p-3 transition duration-700 ease-in-out text-3xl md:text-4xl flex justify-center items-center w-full md:w-[70%] shadow-2xl`}
       >
         ¡VAMOS...🦕!
       </a>

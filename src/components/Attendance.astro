@@ -3,22 +3,29 @@ import WhatsApp from "../assets/icons/whatsapp.png";
 ---
 
 <section class="mt-20 flex flex-col items-center">
-  <label class="text-2xl">¿Están list@s para la fiesta?</label>
+  <label class="text-3xl">¿Están list@s para la fiesta?</label>
   <p class="font-mono mt-5">
-    Confirma tu asistencia y la de tus acompañantes lo antes posible... ⏳
+    <b><label class="text-sunshine">Confirma</label></b> tu asistencia y la de tus
+    acompañantes <b><label class="text-sunshine">lo antes posible...</label></b>
+    ⏳
     <br />
     <br />
     Esta invitación es para ti y un acompañantes.
     <br />
     <br />
-    Si eres un Dino-Compañero del colegio puedes llevar a 2 acompñantes 🥳
+    Si eres un(una) <b><label class="text-sunshine">Dino-Compañer@</label></b> del
+    colegio puedes llevar a <b
+      ><label class="text-sunshine">2 acompañantes</label></b
+    > 🥳
   </p>
 
-  <button class="bg-lime-400 p-5 rounded-xl flex justify-center items-center">
+  <button
+    class="bg-sunshine p-5 rounded-xl flex justify-center items-center text-midnight hover:scale-125 shadow-2xl mt-5"
+  >
     Confirmar asistencia
     <img alt="whatsapp" src={WhatsApp} class="w-5 ml-1" /></button
   ><button
-    class="text-xs mt-5 bg-red-400 p-5 rounded-xl flex justify-center items-center"
+    class="text-xs mt-5 bg-vermillion p-5 rounded-xl flex justify-center items-center text-midnight shadow-xl"
   >
     Lo lamento, no podré asistir <img
       alt="whatsapp"
@@ -27,9 +34,9 @@ import WhatsApp from "../assets/icons/whatsapp.png";
     />
   </button>
 </section>
-<i>
+<i class="text-xs mt-5">
   P.D. Si necesitas más pases para algún herman@, favor de hacerlo saber en el
-  mensaje de confirmación.
+  mensaje de confirmación para verificar disponibilidad.
 </i>
 
 <style></style>

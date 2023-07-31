@@ -2,14 +2,16 @@
 import Layout from "../layouts/Layout.astro";
 import MainInfo from "../components/MainInfo.astro";
 import Attendance from "../components/Attendance.astro";
+import ModalGift from "../components/modalGift/ModalGift";
 import CountdownTimer from "../components/countdownTimer/CountdownTimer";
+
 import PartyPopper from "../assets/icons/party-popper.png";
 
 const targetDate = "2023-09-09T13:59:59";
 ---
 
 <Layout>
-  <main class="flex flex-col items-center lg:px-[30rem] text-center">
+  <main class="flex flex-col items-center lg:px-[30rem] text-center pb-10">
     <section class="h-screen flex flex-col justify-center relative gap-12">
       <img
         alt="gorro de fiesta"
@@ -23,12 +25,16 @@ const targetDate = "2023-09-09T13:59:59";
       />
       <h1 class="text-4xl">¡HOLAAA! <br /> Es un gusto tenerte aquí.</h1>
       <p class="mt-5 text-xl font-mono">
-        Farith está cumpliendo 3 años y nos encantaría que nos acompañaras 🥳<br
-        />¡Será una fiesta muy<br />Dino-divertida!
+        <b><label class="text-sunshine">Farith</label></b> está cumpliendo
+        <b><label class="text-sunshine">3 años</label></b>
+        <br />y nos encantaría que lo acompañaras <br /><br />¡Será una fiesta
+        muy<br /><b><label class="text-sunshine">Dino-Increíble!</label></b><br
+        /> 🦖🥳
       </p>
     </section>
     <CountdownTimer client:load targetDate={targetDate} />
     <MainInfo />
     <Attendance />
+    <ModalGift client:load />
   </main>
 </Layout>

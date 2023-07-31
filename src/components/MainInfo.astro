@@ -10,39 +10,54 @@ import Calendar from "../assets/icons/calendar.png";
 import Location from "../assets/icons/location.png";
 ---
 
-<section class="mt-20 w-full h-auto flex flex-col gap-20">
-  <div class="w-full h-auto flex flex-col items-center gap-3">
-    <img
-      src={Calendar}
-      alt="calendar"
-      class="w-1/3 animate-wiggle animate-infinite animate-ease-in"
-    />
-    <label class="text-2xl">Fecha y hora:</label>
-    <p class="font-mono text-xl font-medium">
-      9 de Septiembre 2023 <br /> La diversión comienza
-      <br />a las <b>2:00 P.M.</b>
-    </p>
-  </div>
+<>
+  <section class="mt-20 w-full h-auto flex flex-col lg:flex-row gap-20">
+    <div class="w-full h-auto flex flex-col items-center gap-3">
+      <img
+        src={Calendar}
+        alt="calendar"
+        class="w-1/4 animate-wiggle animate-infinite animate-ease-in"
+      />
+      <label class="text-2xl">Fecha y hora:</label>
+      <p class="font-mono text-xl font-medium">
+        <b><label class="text-sunshine">9</label></b> de <b
+          ><label class="text-sunshine">Septiembre</label></b
+        > 2023 <br /> La diversión comienza
+        <br />a las <b><label class="text-sunshine">2:00 P.M.</label></b>
+      </p>
+    </div>
 
-  <div class="w-full h-auto flex flex-col items-center gap-3">
-    <img
-      src={Location}
-      alt="calendar"
-      class="w-1/3 animate-wiggle animate-infinite animate-ease-in"
-    />
-    <label class="text-2xl">Lugar:</label>
-    <p class="font-mono text-xl font-medium">
-      Calle Juana Pavón #533, Colonia Tenencia Morelos.
-    </p>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d824.6182614868034!2d-101.2379632453976!3d19.6481397973004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842d0c63a1e65af7%3A0x48d11943cf053a27!2sSalon%20Regina!5e0!3m2!1ses!2smx!4v1690605225480!5m2!1ses!2smx"
-      width="100%"
-      height="400"
-      style="border:0;"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
-</section>
+    <div class="w-full h-auto flex flex-col items-center gap-3">
+      <img
+        src={Location}
+        alt="calendar"
+        class="w-1/4 animate-wiggle animate-infinite animate-ease-in"
+      />
+      <label class="text-2xl">Lugar:</label>
+      <p class="font-mono text-xl font-medium">
+        Calle Juana Pavón <b><label class="text-sunshine">#533</label></b> Colonia
+        <b><label class="text-sunshine">Tenencia Morelos.</label></b>
+      </p>
+      <iframe
+        class="lg:hidden block"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d824.6182614868034!2d-101.2379632453976!3d19.6481397973004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842d0c63a1e65af7%3A0x48d11943cf053a27!2sSalon%20Regina!5e0!3m2!1ses!2smx!4v1690605225480!5m2!1ses!2smx"
+        width="100%"
+        height="400"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+  <iframe
+    class="lg:block hidden mt-5"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d824.6182614868034!2d-101.2379632453976!3d19.6481397973004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842d0c63a1e65af7%3A0x48d11943cf053a27!2sSalon%20Regina!5e0!3m2!1ses!2smx!4v1690605225480!5m2!1ses!2smx"
+    width="100%"
+    height="550"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+</>
 
 <style></style>

@@ -25,6 +25,8 @@ const CountdownTimer = ({ targetDate }) => {
 
     return { days, hours, minutes, seconds };
   };
+  const containerClass =
+    "flex flex-col border-blue-700 rounded-xl px-6 py-3 border text-midnight border-vermillion -dashed shadow-md";
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
@@ -38,26 +40,28 @@ const CountdownTimer = ({ targetDate }) => {
 
   return (
     <>
-      <h2 className="mt-14 text-2xl">
+      <h2 className="mt-14 text-3xl">
         Días restantes para la <br />
-        Dino-fiesta...
+        <b>
+          <label className="text-sunshine">Dino-Fiesta...</label>
+        </b>
       </h2>
       <div className="max-w-max h-auto grid grid-cols-2 justify-center items-center gap-5 mt-5">
-        <div className="flex flex-col border-blue-700 rounded-xl p-3 border">
-          <label className="text-xl">{timeLeft.days}</label>
-          <label className="font-mono text-xs">dino-días</label>
+        <div className={containerClass}>
+          <label className="text-4xl">{timeLeft.days}</label>
+          <label className="font-mono">Días</label>
         </div>
-        <div className="flex flex-col border-blue-700 rounded-xl p-3 border">
-          <label className="text-xl">{timeLeft.hours}</label>
-          <label className="font-mono text-xs">dino-horas</label>
+        <div className={containerClass}>
+          <label className="text-4xl">{timeLeft.hours}</label>
+          <label className="font-mono">Horas</label>
         </div>
-        <div className="flex flex-col border-blue-700 rounded-xl p-3 border">
-          <label className="text-xl">{timeLeft.minutes}</label>
-          <label className="font-mono text-xs">dino-minutos</label>
+        <div className={containerClass}>
+          <label className="text-4xl">{timeLeft.minutes}</label>
+          <label className="font-mono">Minutos</label>
         </div>
-        <div className="flex flex-col border-blue-700 rounded-xl p-3 border">
-          <label className="text-xl">{timeLeft.seconds}</label>
-          <label className="font-mono text-xs">dino-segundos</label>
+        <div className={containerClass}>
+          <label className="text-4xl">{timeLeft.seconds}</label>
+          <label className="font-mono">Segundos</label>
         </div>
       </div>
     </>
