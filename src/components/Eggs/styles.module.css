@@ -54,3 +54,6 @@
     animation: scaleAnimation 2s infinite;
   }
    
+.Confetti_class{
+  position: fixed!important;
+}

@@ -45,10 +45,12 @@ const ModalGift = () => {
         </>
       )}
 
-      <section className="pt-20">
-        <p className="text-3xl">¿Necesitas algunas ideas para regalo?</p>
+      <section className="pt-12 ">
+        <p className="text-3xl text-yellowGreen">
+          ¿Necesitas algunas ideas para regalo?
+        </p>
         <button
-          className="bg-sunshine px-8 py-5 rounded-xl mt-8 text-midnight hover:scale-125 shadow-2xl"
+          className="bg-blueAqua px-8 py-5 rounded-xl mt-8 text-midnight hover:scale-125 shadow-2xl"
           onClick={() => setIsOpen(true)}
         >
           Caja de Ideas 💝

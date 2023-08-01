@@ -4,14 +4,15 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <main class="flex flex-col items-center lg:px-[20rem]">
+  <main class="flex flex-col items-center lg:px-[20rem] h-screen">
     <Eggs client:load />
   </main>
 </Layout>
 
-<style is:inline>
+<style>
   main {
     height: 100vh;
-    color: #ffff;
+    color: #cbcbcb;
+    background-color: #ffff;
   }
 </style>

@@ -26,7 +26,7 @@ const CountdownTimer = ({ targetDate }) => {
     return { days, hours, minutes, seconds };
   };
   const containerClass =
-    "flex flex-col border-blue-700 rounded-xl px-6 py-3 border text-midnight border-vermillion -dashed shadow-md";
+    "flex flex-col border-blue-700 rounded-xl px-6 py-3 border text-yellowGreen border-babyBlue shadow-md ";
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
@@ -40,11 +40,9 @@ const CountdownTimer = ({ targetDate }) => {
 
   return (
     <>
-      <h2 className="mt-14 text-3xl">
+      <h2 className="mt-14 text-3xl text-babyBlue mb-5">
         Días restantes para la <br />
-        <b>
-          <label className="text-sunshine">Dino-Fiesta...</label>
-        </b>
+        Dino-Fiesta...
       </h2>
       <div className="max-w-max h-auto grid grid-cols-2 justify-center items-center gap-5 mt-5">
         <div className={containerClass}>
