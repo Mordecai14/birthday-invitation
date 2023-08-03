@@ -60,7 +60,7 @@ const Eggs = () => {
         />
       )}
       <p
-        className={`absolute top-[70%] left-[30%] md:top-[23%] md:left-[8%] lg:top-[33%] lg:left-[11%] text-center text-[#66c4e0] text-cl lg:text-2xl ${
+        className={`absolute top-[65%] left-[30%] md:top-[23%] md:left-[8%] lg:top-[33%] lg:left-[11%] text-center text-[#66c4e0] text-cl lg:text-2xl ${
           styles.animatedText
         } opacity-0 ${counter >= 9 && "opacity-100"} transition-all`}
       >
@@ -88,8 +88,8 @@ const Eggs = () => {
         href="/home"
         className={`${counter > 8 ? "opacity-1" : "opacity-0"} ${
           counter > 7 ? "scale-100" : "scale-0"
-        } hover:scale-125
-           bg-yellowGreen text-blueAqua h-auto rounded-lg p-3 transition duration-700 ease-in-out text-3xl md:text-4xl flex justify-center items-center w-full md:w-[70%] shadow-2xl`}
+        } lg:hover:scale-125
+           bg-yellowGreen text-blueAqua h-auto rounded-lg p-3 transition duration-700 ease-in-out text-3xl md:text-4xl flex justify-center items-center w-[70%] md:w-[70%] shadow-2xl`}
       >
         ¡VAMOS...🦕!
       </a>

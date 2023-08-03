@@ -12,9 +12,8 @@ const ModalGift = () => {
             <div
               style={{
                 backgroundImage: `url(${BackGround})`,
-                backdropFilter: "",
               }}
-              className="rounded-xl w-[80%] h-[80%] lg:w-[50%] text-black p-5 flex flex-col shadow-2xl"
+              className="rounded-xl w-[80%] h-[80%] lg:w-[50%] text-black p-5 flex flex-col shadow-2xl overflow-y-scroll max-h-max"
             >
               <button
                 className="items-end self-end text-midnight pb-5 text-xs"
