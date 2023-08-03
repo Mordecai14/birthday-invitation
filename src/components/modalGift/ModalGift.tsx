@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import BackGround from "../../assets/bg.jpeg";
 
 const ModalGift = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,7 +9,13 @@ const ModalGift = () => {
       {isOpen && (
         <>
           <div className="w-full h-screen bg-transparent fixed top-0 flex justify-center items-center z-50">
-            <div className="bg-clean rounded-xl w-[80%] h-[80%] lg:w-[50%] text-fresh p-5 flex flex-col shadow-2xl">
+            <div
+              style={{
+                backgroundImage: `url(${BackGround})`,
+                backdropFilter: "",
+              }}
+              className="rounded-xl w-[80%] h-[80%] lg:w-[50%] text-black p-5 flex flex-col shadow-2xl"
+            >
               <button
                 className="items-end self-end text-midnight pb-5 text-xs"
                 onClick={() => setIsOpen(false)}
@@ -26,18 +33,25 @@ const ModalGift = () => {
                   marginTop: "20px",
                 }}
               >
-                <li className="text-vermillion font-mono mt-3">
-                  Astronautas y cosas del espacio
+                <li className="mt-3">Astronautas y cosas del espacio</li>
+                <li className="mt-3">Dinosaurios</li>
+                <li className="mt-3">Hot-Wheels (Coches en general)</li>
+                <li className="mt-3">Little People</li>
+                <li className="mt-3">Nerf</li>
+                <li className="mt-3">Instrumentos musicales</li>
+                <li className="mt-3">Play-Doh</li>
+                <li className="mt-3">Ropa talla 4</li>
+                <li className="mt-3">Tenis talla 17</li>
+                <li className="mt-3 text-xs">
+                  NOTA: Farith juega con cualquier tipo de juguete, lo
+                  mencionado anteriormente solo son ideas generales.
                 </li>
-                <li className="font-mono mt-3">Dinosaurios</li>
-                <li className="text-vermillion font-mono mt-3">Hot-Wheels</li>
-                <li className="font-mono mt-3">Little People</li>
               </ol>
               <p className="mt-5">
                 Lo más importante es tu asistencia. <br />
                 <br />
                 <b>
-                  <label className="text-sunshine text-3xl">¡No faltes!</label>
+                  <label className="text-midnight text-3xl">¡No faltes!</label>
                 </b>
               </p>
             </div>
@@ -46,7 +60,7 @@ const ModalGift = () => {
       )}
 
       <section className="pt-12 ">
-        <p className="text-3xl text-yellowGreen">
+        <p className="text-3xl text-midnight">
           ¿Necesitas algunas ideas para regalo?
         </p>
         <button

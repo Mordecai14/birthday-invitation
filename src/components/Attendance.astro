@@ -1,8 +1,9 @@
 ---
 import WhatsApp from "../assets/icons/whatsapp.png";
+import Dino1 from "../assets/dinos/dinosentado2.svg";
 ---
 
-<section class="mt-20 flex flex-col items-center bg-[#FFFEA8] py-5">
+<section class="relative mt-20 flex flex-col items-center bg-[#FFFEA8] py-5">
   <label class="text-3xl text-yellowGreen">¿Están list@s para la fiesta?</label>
   <p class="m-8 flower text-xl">
     Confirma tu asistencia y la de tus acompañantes lo antes posible... ⏳
@@ -11,13 +12,17 @@ import WhatsApp from "../assets/icons/whatsapp.png";
     Esta invitación es para ti y un acompañantes.
     <br />
     <br />
-    Si eres un(una) Dino-Compañer@ del colegio puedes llevar a 2 acompañantes 🥳
+    Si eres un (una) Dino-Compañer@ del colegio puedes llevar a 2 acompañantes 🥳
   </p>
-
+  <img
+    alt="dino1"
+    src={Dino1}
+    class="absolute w-[163px] top-[38%] left-[38%] z-10"
+  />
   <a
     href="https://api.whatsapp.com/send/?phone=5214433367074&text=Hola%2C%20me%20encantar%C3%ADa%20asistir%20a%20la%20fiesta%20de%20Farith"
     target="_blank"
-    class="bg-yellowGreen p-6 rounded-xl flex justify-center items-center text-midnight hover:scale-125 shadow-2xl mt-5 text-lg"
+    class="bg-yellowGreen p-6 rounded-xl flex justify-center items-center text-midnight hover:scale-125 shadow-2xl mt-20 text-lg"
   >
     Confirmar asistencia
     <img alt="whatsapp" src={WhatsApp} class="w-5 ml-1" />

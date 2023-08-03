@@ -5,9 +5,14 @@ import Attendance from "../components/Attendance.astro";
 import ModalGift from "../components/modalGift/ModalGift";
 import CountdownTimer from "../components/countdownTimer/CountdownTimer";
 
-import PartyPopper from "../assets/icons/party-popper.png";
 import Dino from "../assets/dinos/dino1.2.svg";
 import Dino1 from "../assets/dinos/dinosentado6.svg";
+
+import Liana from "../assets/sheet/liana1.svg";
+import Liana2 from "../assets/sheet/liana2.svg";
+import Liana3 from "../assets/sheet/liana3.svg";
+import Liana4 from "../assets/sheet/liana4.svg";
+import Liana5 from "../assets/sheet/liana5.svg";
 
 const targetDate = "2023-09-09T13:59:59";
 ---
@@ -16,6 +21,16 @@ const targetDate = "2023-09-09T13:59:59";
   <main
     class="flex flex-col items-center lg:px-[30rem] text-center pb-10 overflow-hidden"
   >
+    <img
+      alt="liana"
+      src={Liana2}
+      class="absolute w-[2 50px] top-[-16%] left-[-30%] z-10"
+    />
+    <img
+      alt="liana"
+      src={Liana}
+      class="absolute w-[2 50px] top-[-16%] right-[-30%] z-10"
+    />
     <section
       class="h-screen flex flex-col justify-center relative gap-12 bg-yellowGreen"
     >
@@ -27,7 +42,7 @@ const targetDate = "2023-09-09T13:59:59";
       <img
         alt="gorro de fiesta"
         src={Dino}
-        class="absolute w-[150px] bottom-[75px] right-[30%] animate-ping animate-infinite animate-ease-in animate-alternate"
+        class="absolute w-[150px] bottom-[15px] right-[30%] animate-ping animate-infinite animate-ease-in animate-alternate"
       />
 
       <h1 class="text-4xl text-white">

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import DinoGorro1 from "../../assets/dinos/dinosentado6.svg";
 
 const CountdownTimer = ({ targetDate }) => {
   const calculateTimeLeft = () => {
@@ -39,12 +40,17 @@ const CountdownTimer = ({ targetDate }) => {
   }, []);
 
   return (
-    <>
+    <div className="relative">
+      <img
+        alt="dinogorro1"
+        src={DinoGorro1}
+        className="absolute w-[250px] top-[60%] left-[-50%] z-10 rotate-45"
+      />
       <h2 className="mt-14 text-3xl text-babyBlue mb-5">
         Días restantes para la <br />
         Dino-Fiesta...
       </h2>
-      <div className="max-w-max h-auto grid grid-cols-2 justify-center items-center gap-5 mt-5">
+      <div className=" h-auto grid grid-cols-2 justify-center items-center gap-5 mt-5">
         <div className={containerClass}>
           <label className="text-4xl">{timeLeft.days}</label>
           <label className="font-mono">Días</label>
@@ -62,7 +68,7 @@ const CountdownTimer = ({ targetDate }) => {
           <label className="font-mono">Segundos</label>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

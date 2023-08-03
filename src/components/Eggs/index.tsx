@@ -60,7 +60,7 @@ const Eggs = () => {
         />
       )}
       <p
-        className={`absolute top-[65%] left-[30%] md:top-[23%] md:left-[8%] lg:top-[33%] lg:left-[11%] text-center text-[#66c4e0] text-cl lg:text-2xl ${
+        className={`absolute top-[70%] left-[30%] md:top-[23%] md:left-[8%] lg:top-[33%] lg:left-[11%] text-center text-[#66c4e0] text-cl lg:text-2xl ${
           styles.animatedText
         } opacity-0 ${counter >= 9 && "opacity-100"} transition-all`}
       >
@@ -68,7 +68,11 @@ const Eggs = () => {
         <br />A la súper Dino-Fiesta
       </p>
 
-      <h1 className="text-2xl md:text-5xl lg:text-6xl text-center text-[#82bc4b]">
+      <h1
+        className={`${
+          counter >= 9 ? "hidden" : "flex"
+        } text-2xl md:text-5xl lg:text-6xl text-center text-[#82bc4b]`}
+      >
         Haz click en el huevo para descubrir la sorpresa
         <br />
       </h1>

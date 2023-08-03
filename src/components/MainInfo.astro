@@ -8,10 +8,47 @@
 // const { href, title, body } = Astro.props;
 import Calendar from "../assets/icons/calendar.png";
 import Location from "../assets/icons/location.png";
+import Liana4 from "../assets/sheet/liana4.svg";
+import Hoja1 from "../assets/sheet/hoja1.svg";
+import Huella1 from "../assets/paws/huella1.svg";
+import Dino1 from "../assets/dinos/dino1.1.svg";
 ---
 
 <>
-  <section class="mt-20 w-full h-auto flex flex-col lg:flex-row gap-20">
+  <section
+    class="relative mt-20 w-full h-auto flex flex-col lg:flex-row gap-20"
+  >
+    <img
+      alt="liana"
+      src={Liana4}
+      class="absolute w-[350px] top-[-3%] left-[40%] z-10"
+    />
+    <img
+      alt="liana"
+      src={Liana4}
+      class="absolute w-[350px] top-[-32%] left-[-39%] z-10"
+    />
+    <img
+      alt="hoja2"
+      src={Huella1}
+      class="absolute w-[100px] bottom-[67%] left-[0%] z-10"
+    />
+    <img
+      alt="hoja2"
+      src={Huella1}
+      class="absolute w-[100px] bottom-[57%] left-[0%] z-10"
+    />
+
+    <img
+      alt="hoja2"
+      src={Huella1}
+      class="absolute w-[85px] top-[-1%] right-[0%] z-10"
+    />
+    <img
+      alt="hoja2"
+      src={Huella1}
+      class="absolute w-[85px] top-[10%] right-[0%] z-10"
+    />
     <div class="w-full h-auto flex flex-col items-center gap-3">
       <img
         src={Calendar}
@@ -45,6 +82,21 @@ import Location from "../assets/icons/location.png";
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+    <img
+      alt="dino1"
+      src={Dino1}
+      class="absolute w-[118px] bottom-[-9%] left-[36%] z-10"
+    />
+    <img
+      alt="dino1"
+      src={Hoja1}
+      class="absolute w-[140px] bottom-[-12%] left-[66%] z-10 scale-x-[-1]"
+    />
+    <img
+      alt="Hoja1"
+      src={Hoja1}
+      class="absolute w-[140px] bottom-[-12%] left-[0%] z-10"
+    />
   </section>
   <iframe
     class="lg:block hidden mt-5"
