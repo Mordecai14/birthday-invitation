@@ -44,9 +44,9 @@ const CountdownTimer = ({ targetDate }) => {
       <img
         alt="dinogorro1"
         src={DinoGorro1}
-        className="absolute w-[250px] top-[60%] left-[-50%] z-10 rotate-45"
+        className="lg:hidden absolute w-[250px] top-[60%] left-[-50%] z-10 rotate-45"
       />
-      <h2 className="mt-14 text-3xl text-babyBlue mb-5">
+      <h2 className="mt-5 text-3xl text-babyBlue mb-5">
         Días restantes para la <br />
         Dino-Fiesta...
       </h2>

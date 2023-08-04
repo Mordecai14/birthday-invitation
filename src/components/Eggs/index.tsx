@@ -6,6 +6,11 @@ import Cartel from "../../assets/eggs/dinosaurio_opcion1.svg";
 import styles from "./styles.module.css";
 import Confetti from "react-confetti";
 import useWindowSize from "./useWindowSize";
+import AudioPlayer from "../audioPlayer/AaudioPlayer";
+import Horns from "../../assets/horn.mp3";
+import Golpe1 from "../../assets/golpe1.mp3";
+import Golpe2 from "../../assets/golpe2.mp3";
+import Crack from "../../assets/crack.mp3";
 
 const Eggs = () => {
   const [counter, setCounter] = useState(0);
@@ -14,9 +19,15 @@ const Eggs = () => {
   const [wWidth, setWWidth] = useState(0);
   const { width, height } = useWindowSize();
 
+  const golpes = [Golpe1, Golpe2]; // Arreglo con los nombres de los sonidos disponibles
+
   const handleImageClick = () => {
     setCounter(counter + 1);
     if (counter < 8) {
+      const randomSound = golpes[Math.floor(Math.random() * golpes.length)];
+      // Reproducir el sonido seleccionado
+      const audio = new Audio(Crack);
+      audio.play();
       setIsVibrating(true);
       setTimeout(() => {
         setIsVibrating(false);
@@ -52,12 +63,15 @@ const Eggs = () => {
   return (
     <section className="flex flex-col w-full h-screen relative justify-start items-center">
       {counter >= 9 && (
-        <Confetti
-          width={width}
-          height={height}
-          className={styles.Confetti_class}
-          colors={["#94DFE6", "#EBDCC7", "#B5EECB", "#F8EA8C", "#00a6be"]}
-        />
+        <>
+          <Confetti
+            width={width}
+            height={height}
+            className={styles.Confetti_class}
+            colors={["#94DFE6", "#EBDCC7", "#B5EECB", "#F8EA8C", "#00a6be"]}
+          />
+          <AudioPlayer audio={Horns} tipo={"audio/mp3"} />
+        </>
       )}
       <p
         className={`absolute top-[65%] left-[30%] md:top-[23%] md:left-[8%] lg:top-[33%] lg:left-[11%] text-center text-[#66c4e0] text-cl lg:text-2xl ${
@@ -81,7 +95,10 @@ const Eggs = () => {
         // src={Cartel}
         className={`object-cover ${isVibrating && styles.vibratingImage} ${
           counter < 9 && "sm:h-[40%]"
-        } ${counter >= 9 && "sm:h-[65%] mt-16"} lg:h-[60%] mt-14 lg:mt-10`}
+        } ${
+          counter >= 9 &&
+          "sm:h-[65%] mt-16 animate-fade-up animate-once animate-delay-0 animate-ease-in animate-alternate"
+        } lg:h-[60%] mt-14 lg:mt-10`}
         onClick={handleImageClick}
       />
       <a
@@ -89,7 +106,7 @@ const Eggs = () => {
         className={`${counter > 8 ? "opacity-1" : "opacity-0"} ${
           counter > 7 ? "scale-100" : "scale-0"
         } lg:hover:scale-125
-           bg-yellowGreen text-blueAqua h-auto rounded-lg p-3 transition duration-700 ease-in-out text-3xl md:text-4xl flex justify-center items-center w-[70%] md:w-[70%] shadow-2xl`}
+           bg-yellowGreen text-blueAqua h-auto rounded-lg p-3 transition duration-700 ease-in-out text-3xl md:text-4xl flex justify-center items-center w-[98%] md:w-[70%] shadow-2xl`}
       >
         ¡VAMOS...🦕!
       </a>
