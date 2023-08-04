@@ -34,16 +34,18 @@ const ModalGift = () => {
               >
                 <li className="mt-3">Astronautas y cosas del espacio</li>
                 <li className="mt-3">Dinosaurios</li>
-                <li className="mt-3">Hot-Wheels (Coches en general)</li>
+                <li className="mt-3">Carros</li>
+                <li className="mt-3">Pistas</li>
                 <li className="mt-3">Little People</li>
                 <li className="mt-3">Nerf</li>
                 <li className="mt-3">Instrumentos musicales</li>
-                <li className="mt-3">Play-Doh</li>
+                <li className="mt-3">Play-Doh / Arena Kinestesica / Slimes </li>
                 <li className="mt-3">Ropa talla 4</li>
                 <li className="mt-3">Tenis talla 17</li>
                 <li className="mt-3 text-xs">
                   NOTA: Farith juega con cualquier tipo de juguete, lo
-                  mencionado anteriormente solo son ideas generales.
+                  mencionado anteriormente solo son ideas generales. <br />
+                  Cualquier obsequio es perfecto.
                 </li>
               </ol>
               <p className="mt-5">
