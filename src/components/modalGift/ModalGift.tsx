@@ -8,19 +8,19 @@ const ModalGift = () => {
     <>
       {isOpen && (
         <>
-          <div className="w-full h-screen bg-transparent fixed top-0 flex justify-center items-center z-50">
+          <div className="w-full h-screen bg-transparent fixed top-0 flex flex-col justify-center items-center z-50">
+            <button
+              className="justify-end pr-14 flex w-full text-white pb-5 text-xs"
+              onClick={() => setIsOpen(false)}
+            >
+              Cerrar X
+            </button>
             <div
               style={{
                 backgroundImage: `url(${BackGround})`,
               }}
               className="rounded-xl w-[80%] h-[80%] lg:w-[50%] text-black p-5 flex flex-col shadow-2xl overflow-y-scroll max-h-max"
             >
-              <button
-                className="items-end self-end text-midnight pb-5 text-xs"
-                onClick={() => setIsOpen(false)}
-              >
-                Cerrar X
-              </button>
               <p className="text-xl">
                 Estos son algunos de los juguetes favoritos de Farith.
               </p>
