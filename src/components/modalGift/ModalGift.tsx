@@ -44,7 +44,7 @@ const ModalGift = () => {
                 <li className="mt-3">Instrumentos musicales</li>
                 <li className="mt-3">Play-Doh / Arena Kinétics / Slime </li>
                 <li className="mt-3">Ropa talla 4</li>
-                <li className="mt-3">Tenis talla 16</li>
+                <li className="mt-3">Tenis talla 17 o 18 MX</li>
                 <li className="mt-3 text-xs md:text-base text-justify">
                   NOTA: Farith juega con cualquier tipo de juguete, lo
                   mencionado anteriormente solo son ideas generales. Cualquier
