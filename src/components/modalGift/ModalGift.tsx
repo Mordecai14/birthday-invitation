@@ -8,9 +8,9 @@ const ModalGift = () => {
     <>
       {isOpen && (
         <>
-          <div className="w-full h-screen bg-transparent fixed top-0 flex flex-col justify-center items-center z-50">
+          <div className="w-full h-screen bg-transparent fixed top-0 flex flex-col pt-5 items-center z-50">
             <button
-              className="justify-end pr-14 flex w-full text-white pb-5 text-xs"
+              className="justify-end pr-14 flex w-full text-white pb-5"
               onClick={() => setIsOpen(false)}
             >
               Cerrar X
@@ -19,7 +19,7 @@ const ModalGift = () => {
               style={{
                 backgroundImage: `url(${BackGround})`,
               }}
-              className="rounded-xl w-[80%] h-[80%] lg:w-[50%] text-black p-5 flex flex-col shadow-2xl overflow-y-scroll max-h-max"
+              className="rounded-xl w-[80%] h-[85%] lg:w-[50%] text-black p-5 flex flex-col shadow-2xl overflow-y-scroll sm:max-h-max md:max-h-[80%] md:text-2xl"
             >
               <p className="text-xl">
                 Estos son algunos de los juguetes favoritos de Farith.
@@ -41,11 +41,11 @@ const ModalGift = () => {
                 <li className="mt-3">Instrumentos musicales</li>
                 <li className="mt-3">Play-Doh / Arena Kinestesica / Slimes </li>
                 <li className="mt-3">Ropa talla 4</li>
-                <li className="mt-3">Tenis talla 17</li>
-                <li className="mt-3 text-xs">
+                <li className="mt-3">Tenis talla 16</li>
+                <li className="mt-3 text-xs md:text-base text-justify">
                   NOTA: Farith juega con cualquier tipo de juguete, lo
-                  mencionado anteriormente solo son ideas generales. <br />
-                  Cualquier obsequio es perfecto.
+                  mencionado anteriormente solo son ideas generales. Cualquier
+                  obsequio es perfecto.
                 </li>
               </ol>
               <p className="mt-5">

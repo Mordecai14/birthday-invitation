@@ -74,9 +74,9 @@ const Eggs = () => {
         </>
       )}
       <p
-        className={`absolute top-[65%] left-[30%] md:top-[23%] md:left-[8%] lg:top-[33%] lg:left-[11%] text-center text-[#66c4e0] text-cl lg:text-2xl ${
-          styles.animatedText
-        } opacity-0 ${counter >= 9 && "opacity-100"} transition-all`}
+        className={`absolute top-[65%] left-[30%] md:top-[23%] md:left-[8%] lg:top-[33%] lg:left-[11%] text-center text-[#66c4e0] text-cl lg:text-2xl opacity-0 ${
+          counter >= 9 && "opacity-100"
+        } transition-all animate-jump animate-infinite animate-duration-[2000ms] animate-ease-in`}
       >
         !Estás invitad@!
         <br />A la súper Dino-Fiesta
