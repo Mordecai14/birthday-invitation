@@ -38,8 +38,11 @@ const ModalGift = () => {
                 <li className="mt-3">Pistas</li>
                 <li className="mt-3">Little People</li>
                 <li className="mt-3">Nerf</li>
+                <li className="mt-3">
+                  Juguetes para juegos re rol (cocina, bombero, doctor, etc.)
+                </li>
                 <li className="mt-3">Instrumentos musicales</li>
-                <li className="mt-3">Play-Doh / Arena Kinestesica / Slimes </li>
+                <li className="mt-3">Play-Doh / Arena Kinétics / Slime </li>
                 <li className="mt-3">Ropa talla 4</li>
                 <li className="mt-3">Tenis talla 16</li>
                 <li className="mt-3 text-xs md:text-base text-justify">

@@ -108,7 +108,7 @@ const Eggs = () => {
         } lg:hover:scale-125
            bg-yellowGreen text-blueAqua h-auto rounded-lg p-3 transition duration-700 ease-in-out text-3xl md:text-4xl flex justify-center items-center w-[98%] md:w-[70%] shadow-2xl`}
       >
-        ¡VAMOS...🦕!
+        Haz click aquí...🦕!
       </a>
     </section>
   );
